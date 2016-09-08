@@ -1,28 +1,74 @@
 {
-  "name": "react-native-splash-screen",
-  "version": "1.0.0",
+  "_args": [
+    [
+      "https://github.com/creotiv/react-native-splash-screen.git",
+      "/home/creotiv/ENVS/TestApp"
+    ]
+  ],
+  "_from": "git+https://github.com/creotiv/react-native-splash-screen.git",
+  "_id": "react-native-splash-screen@1.0.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/react-native-splash-screen",
+  "_phantomChildren": {},
+  "_requested": {
+    "hosted": {
+      "directUrl": "https://raw.githubusercontent.com/creotiv/react-native-splash-screen/master/package.json",
+      "gitUrl": "git://github.com/creotiv/react-native-splash-screen.git",
+      "httpsUrl": "git+https://github.com/creotiv/react-native-splash-screen.git",
+      "shortcut": "github:creotiv/react-native-splash-screen",
+      "ssh": "git@github.com:creotiv/react-native-splash-screen.git",
+      "sshUrl": "git+ssh://git@github.com/creotiv/react-native-splash-screen.git",
+      "type": "github"
+    },
+    "name": null,
+    "raw": "https://github.com/creotiv/react-native-splash-screen.git",
+    "rawSpec": "https://github.com/creotiv/react-native-splash-screen.git",
+    "scope": null,
+    "spec": "git+https://github.com/creotiv/react-native-splash-screen.git",
+    "type": "hosted"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/creotiv/react-native-splash-screen.git#b2545f779db39dfb36113276f202fb027c408b6b",
+  "_shasum": "0024db81659ab2f425dda1164cec05b198b94a6e",
+  "_shrinkwrap": null,
+  "_spec": "https://github.com/creotiv/react-native-splash-screen.git",
+  "_where": "/home/creotiv/ENVS/TestApp",
+  "author": {
+    "email": "creotiv@gmail.com",
+    "name": "Andrey Nikishaev",
+    "url": "https://medium.com/@a.nikishaev"
+  },
+  "bugs": {
+    "url": "https://github.com/creotiv/react-native-splash-screen/issues"
+  },
+  "dependencies": {},
   "description": "Native splash screen for react-native applications.",
-  "main": "splashscreen.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/creotiv/react-native-splash-screen.git"
-  },
+  "devDependencies": {},
+  "gitHead": "b2545f779db39dfb36113276f202fb027c408b6b",
+  "homepage": "https://github.com/creotiv/react-native-splash-screen#readme",
   "keywords": [
     "react-native",
     "android",
     "splashscreen",
     "launcher"
   ],
-  "author": "Andrey Nikishaev <creotiv@gmail.com> (https://medium.com/@a.nikishaev)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/creotiv/react-native-splash-screen/issues"
-  },
-  "homepage": "https://github.com/creotiv/react-native-splash-screen#readme",
+  "main": "splashscreen.js",
+  "name": "react-native-splash-screen",
+  "optionalDependencies": {},
   "peerDependencies": {
-    "react-native": ">=0.8.0"
-  }
+    "react-native": ">=0.24.0"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creotiv/react-native-splash-screen.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
 }

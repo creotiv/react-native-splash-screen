@@ -1,7 +1,6 @@
 package com.creotiv.RNSplashScreen;
 
 import android.app.Activity;
-import android.R;
 
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.Callback;
@@ -15,17 +14,20 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RNSplashScreenModule extends ReactContextBaseJavaModule {
-  private Activity activity;
 
-  public RNSoundModule(ReactApplicationContext context, Activity activity) {
+  public RNSplashScreenModule(ReactApplicationContext context) {
     super(context);
-    this.activity = activity;
     setBackground();
   }
 
-  protected setBackground() {
+  protected void setBackground() {
+    Activity cur = getCurrentActivity();
     // set theme background
-    this.activity.getWindow().setBackgroundDrawableResource(R.drawable.background_splash);
+    int drawableId = cur.getResources().getIdentifier("background_splash", "drawable", cur.getClass().getPackage().getName());
+    if (drawableId == 0) {
+        drawableId = cur.getResources().getIdentifier("background_splash", "drawable", cur.getPackageName());
+    }
+    cur.getWindow().setBackgroundDrawableResource(drawableId);
   }
 
   @Override
@@ -36,8 +38,8 @@ public class RNSplashScreenModule extends ReactContextBaseJavaModule {
   @ReactMethod
   public void hide() {
     // set empty drawable;
-    this.activity.getWindow().setBackgroundDrawableResource(0);
-    this.activity.recreate();
+    getCurrentActivity().getWindow().setBackgroundDrawableResource(0);
+    getCurrentActivity().recreate();
   }
 
 }

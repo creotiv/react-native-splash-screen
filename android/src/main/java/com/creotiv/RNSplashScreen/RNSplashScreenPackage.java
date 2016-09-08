@@ -12,19 +12,10 @@ import com.facebook.react.uimanager.ViewManager;
 
 public class RNSplashScreenPackage implements ReactPackage {
 
-  private Activity activity;
-  private RNSplashScreenModule mModuleInstance;
-
-  public RNSplashScreenPackage(Activity activity) {
-    super();
-    this.activity = activity;
-  }
-    
   @Override
   public List<NativeModule> createNativeModules (ReactApplicationContext context) {
     List<NativeModule> modules = new ArrayList<>();
-    mModuleInstance = new RNSplashScreenModule(context, this.activity);
-    modules.add(mModuleInstance);
+    modules.add(new RNSplashScreenModule(context));
     return modules;
   }
 
