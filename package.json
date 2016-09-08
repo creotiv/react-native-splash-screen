@@ -1,0 +1,28 @@
+{
+  "name": "react-native-splash-screen",
+  "version": "1.0.0",
+  "description": "Native splash screen for react-native applications.",
+  "main": "splashscreen.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creotiv/react-native-splash-screen.git"
+  },
+  "keywords": [
+    "react-native",
+    "android",
+    "splashscreen",
+    "launcher"
+  ],
+  "author": "Andrey Nikishaev <creotiv@gmail.com> (https://medium.com/@a.nikishaev)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/creotiv/react-native-splash-screen/issues"
+  },
+  "homepage": "https://github.com/creotiv/react-native-splash-screen#readme",
+  "peerDependencies": {
+    "react-native": ">=0.8.0"
+  }
+}
